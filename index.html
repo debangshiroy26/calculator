@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="calc" id="calc">
+<div class="calc__top">
+<div class="brand"><span class="dot"></span>Calculator</div>
+<div id="themeToggle" class="theme" role="button" aria-label="Toggle theme">🌙 Dark</div>
+
+</div>
+<div class="display" aria-live="polite">
+<div class="expression" id="expression">&nbsp;</div>
+<div class="result" id="result">0</div>
+</div>
+
+
+<div class="keys" id="keys">
+<button class="key danger" data-action="all-clear">AC</button>
+<button class="key" data-action="clear">C</button>
+<button class="key" data-action="backspace">⌫</button>
+<button class="key op" data-value="/">÷</button>
+
+
+<button class="key" data-value="7">7</button>
+<button class="key" data-value="8">8</button>
+<button class="key" data-value="9">9</button>
+<button class="key op" data-value="*">×</button>
+
+
+<button class="key" data-value="4">4</button>
+<button class="key" data-value="5">5</button>
+<button class="key" data-value="6">6</button>
+<button class="key op" data-value="-">−</button>
+
+
+<button class="key" data-value="1">1</button>
+<button class="key" data-value="2">2</button>
+<button class="key" data-value="3">3</button>
+<button class="key op" data-value="+">+</button>
+
+
+<button class="key" data-action="sign">±</button>
+<button class="key" data-value="0">0</button>
+<button class="key" data-action="percent">%</button>
+<button class="key accent" data-action="equals">=</button>
+</div>
+
+
+<div class="footer">
+<div class="hint">Keyboard: <span class="kbd">0-9</span> <span class="kbd">+ − × ÷</span> <span class="kbd">.</span> <span class="kbd">Enter</span> <span class="kbd">Backspace</span> <span class="kbd">Esc</span></div>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
